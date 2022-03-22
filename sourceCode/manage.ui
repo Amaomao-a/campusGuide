@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>manage</class>
+ <widget class="QWidget" name="manage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>501</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>校园导览系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/image/exe.ico</normaloff>:/image/exe.ico</iconset>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>551</width>
+     <height>631</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="LoginPage">
+    <widget class="QLabel" name="label_bgp">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-330</y>
+       <width>501</width>
+       <height>971</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resource.qrc">:/image/bupt_4.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>-1</number>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>270</y>
+       <width>453</width>
+       <height>188</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="layout">
+      <item row="2" column="2">
+       <widget class="QCheckBox" name="autoLogin">
+        <property name="styleSheet">
+         <string notr="true">color:white</string>
+        </property>
+        <property name="text">
+         <string>自动登录</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_name">
+        <property name="styleSheet">
+         <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;
+color:white;</string>
+        </property>
+        <property name="text">
+         <string>用户名(Name)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_name">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	border:1px rgb(170,170,255);
+	background-color: rgba(170, 170, 255, 0);
+	padding:1px 2px;
+	border-style: solid;
+	font-size : 15px ;
+	font: 10pt &quot;Sarasa Term SC&quot;;
+	color: black;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="regi">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #555555;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    color: brown
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+        </property>
+        <property name="text">
+         <string>注册账号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_passwd">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	border:1px rgb(170,170,255);
+
+	background-color: rgba(170, 170, 255, 0);
+	padding:1px 2px;
+	border-style: solid;
+	font-size : 15px ;
+	font: 10pt &quot;Sarasa Term SC&quot;;
+	color: white;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="remPasswd">
+        <property name="styleSheet">
+         <string notr="true">color:white
+</string>
+        </property>
+        <property name="text">
+         <string>记住密码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_pwd">
+        <property name="styleSheet">
+         <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;
+color:white;</string>
+        </property>
+        <property name="text">
+         <string>密码(Password)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="help">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #00916a;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    color: brown
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+        </property>
+        <property name="text">
+         <string>用户手册</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="fw">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #555555;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    color: brown
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+        </property>
+        <property name="text">
+         <string>重置密码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QPushButton" name="login">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    border-radius: 8px;
+    color: #8d8dd3;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: white;
+    color: black;
+    border: 2px solid #51f3f3;
+}
+QPushButton:hover {
+    color: red;
+	background-color: #a5a5f7
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+        </property>
+        <property name="text">
+         <string>登录</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>170</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 22pt &quot;Sarasa Term SC&quot;;
+color:black;</string>
+     </property>
+     <property name="text">
+      <string>校园导览系统</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="RegisterPage">
+    <widget class="QLabel" name="label_bgp_2">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-10</y>
+       <width>581</width>
+       <height>971</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resource.qrc">:/image/bupt_4.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>200</y>
+       <width>241</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="RP_pwdConfirm"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="RP_back">
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+	background-color: #aaaa7f;
+    border-radius: 8px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 10pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}font: 10pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="RP_name"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="RP_pwd"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>提示</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>密码确认</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>用户名</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>密码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="RP_note"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="RP_Register">
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+	background-color: #d5d500;
+    border-radius: 8px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 10pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}font: 10pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>注册</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="ForgetPage">
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>-580</x>
+       <y>-40</y>
+       <width>1361</width>
+       <height>811</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resource.qrc">:/image/bupt_4.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>153</x>
+       <y>205</y>
+       <width>261</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="FP_note"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>提示</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="FP_newPWD"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="FP_pwdConfirm"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="FP_name"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>密码确认</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>新密码</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>用户名</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="FP_back">
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+	background-color: #55aaff;
+    border-radius: 8px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 10pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}font: 10pt &quot;Sarasa Term SC&quot;;</string>
+          </property>
+          <property name="text">
+           <string>返回</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="FP_reset">
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+	background-color: #ffaa7f;
+    border-radius: 8px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 10pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}font: 10pt &quot;Sarasa Term SC&quot;;</string>
+          </property>
+          <property name="text">
+           <string>重置密码</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_name</tabstop>
+  <tabstop>lineEdit_passwd</tabstop>
+  <tabstop>login</tabstop>
+  <tabstop>regi</tabstop>
+  <tabstop>fw</tabstop>
+  <tabstop>help</tabstop>
+  <tabstop>remPasswd</tabstop>
+  <tabstop>autoLogin</tabstop>
+  <tabstop>RP_name</tabstop>
+  <tabstop>RP_pwd</tabstop>
+  <tabstop>FP_name</tabstop>
+  <tabstop>FP_note</tabstop>
+  <tabstop>FP_newPWD</tabstop>
+  <tabstop>FP_pwdConfirm</tabstop>
+  <tabstop>FP_back</tabstop>
+  <tabstop>RP_pwdConfirm</tabstop>
+  <tabstop>RP_note</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

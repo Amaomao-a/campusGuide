@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/[map]shahe.png</file>
+        <file>image/5.jpg</file>
+        <file>image/exe.ico</file>
+        <file>image/man_bicycle_left.png</file>
+        <file>image/man_bicycle_right.png</file>
+        <file>image/man_left.png</file>
+        <file>image/man_right.png</file>
+        <file>image/bupt_1.jpg</file>
+        <file>image/bupt_2.jpg</file>
+        <file>image/bupt_3.jpg</file>
+        <file>image/bupt_4.jpg</file>
+        <file>image/LoginPage.png</file>
+        <file>image/[map]xitucheng.png</file>
+        <file>image/[map]academic.png</file>
+        <file>image/[map]dormitory.png</file>
+        <file>image/bus.png</file>
+        <file>image/loading.gif</file>
+        <file>image/loading2.gif</file>
+    </qresource>
+</RCC>

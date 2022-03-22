@@ -1,0 +1,1504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>campusGuide</class>
+ <widget class="QMainWindow" name="campusGuide">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1499</width>
+    <height>848</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>campusGuide</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/image/exe.ico</normaloff>:/image/exe.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralWidget{	
+	background-image: url(:/image/bupt_2.jpg);
+}</string>
+   </property>
+   <widget class="QLabel" name="userLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/image/man_right.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>650</y>
+      <width>431</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="travelMsgForm">
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <property name="text">
+        <string>当前位置</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <property name="text">
+        <string>行进策略</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QComboBox" name="comboBox_dst">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>沙河校区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>西土城校区</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QGroupBox" name="groupBox_src">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QComboBox" name="srcAccurate_academic">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>101</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>楼道</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>01号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>02号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>03号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>04号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>05号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>06号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>07号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>08号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>男厕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>女厕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11号教研室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12号教研室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13号办公室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14号办公室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15号开水间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16号会议室</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="srcAccurate_dormitory">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>101</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>电梯口</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>01号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>02号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>03号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>04号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>05号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>06号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>07号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>08号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>09号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>22号房间</string>
+         </property>
+        </item>
+       </widget>
+       <zorder>srcAccurate_dormitory</zorder>
+       <zorder>srcAccurate_academic</zorder>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QComboBox" name="comboBox_trans">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>沙河校区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>西土城校区</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <property name="text">
+        <string>途径地</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>101</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <property name="text">
+        <string>目的地</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QWidget" name="widget" native="true"/>
+     </item>
+     <item row="1" column="4">
+      <widget class="QComboBox" name="comboBox_src">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>沙河校区</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>西土城校区</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QGroupBox" name="groupBox_trans">
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QComboBox" name="transAccurate_academic">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>101</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>楼道</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>01号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>02号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>03号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>04号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>05号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>06号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>07号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>08号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>男厕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>女厕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11号教研室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12号教研室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13号办公室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14号办公室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15号开水间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16号会议室</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="transAccurate_dormitory">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>101</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>电梯口</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>01号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>02号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>03号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>04号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>05号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>06号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>07号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>08号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>09号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>22号房间</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QGroupBox" name="groupBox_dst">
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QComboBox" name="dstAccurate_academic">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>101</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>楼道</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>01号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>02号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>03号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>04号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>05号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>06号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>07号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>08号教室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>男厕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>女厕</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11号教研室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12号教研室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13号办公室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14号办公室</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15号开水间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16号会议室</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="dstAccurate_dormitory">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>101</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>电梯口</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>01号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>02号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>03号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>04号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>05号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>06号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>07号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>08号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>09号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>21号房间</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>22号房间</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="lineEdit_dst">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="lineEdit_trans">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="lineEdit_src">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QComboBox" name="comboBox_strategy">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>最短距离</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>最短时间</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>最短距离(途径某地)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>最短时间(校内可选交通工具)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_msg">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>650</y>
+      <width>381</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="make">
+    <property name="geometry">
+     <rect>
+      <x>459</x>
+      <y>660</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(170, 170, 127);
+    border-radius: 8px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+    </property>
+    <property name="text">
+     <string>制定路线</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dstChange">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>660</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #7b3db8;
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+    </property>
+    <property name="text">
+     <string>切换目的地</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="strategyChange">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>700</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color:#009800;
+    border-radius: 8px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+    </property>
+    <property name="text">
+     <string>切换行进策略</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logout">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>740</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #9e9e9e;
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+    </property>
+    <property name="text">
+     <string>注销</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>650</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9.5pt &quot;Sarasa Term SC&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>路线</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start">
+    <property name="geometry">
+     <rect>
+      <x>459</x>
+      <y>700</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #d5d500;
+    border-radius: 8px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}font: 10pt &quot;Sarasa Term SC&quot;;</string>
+    </property>
+    <property name="text">
+     <string>开始导航</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pause">
+    <property name="geometry">
+     <rect>
+      <x>459</x>
+      <y>740</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #bf5f00;
+    border-radius: 8px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}font: 10pt &quot;Sarasa Term SC&quot;;</string>
+    </property>
+    <property name="text">
+     <string>暂停</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mapChange">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>710</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #dc006e;
+    border-radius: 8px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+    </property>
+    <property name="text">
+     <string>切换地图</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>1231</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextBrowser#textBrowser{
+background-image: url(:/image/bupt_2.jpg);
+	border-width:0;
+	border-style:outset;
+}</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/image/[map]shahe.png&quot; /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>0</y>
+      <width>261</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="preference">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true">font: 9.5pt &quot;Sarasa Term SC&quot;;
+color:white;</string>
+         </property>
+         <property name="text">
+          <string>用户偏好</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>128</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <widget class="QListView" name="preferredView">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QCheckBox" name="checkBox_accurate">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;
+color:white;</string>
+         </property>
+         <property name="text">
+          <string>精确制导</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_talk">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;
+color:white;</string>
+         </property>
+         <property name="text">
+          <string>语音播报</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QListView" name="siteView">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>650</y>
+      <width>381</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_10"/>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1231</x>
+      <y>272</y>
+      <width>171</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <property name="text">
+        <string>查询建筑   </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="searchName">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <property name="text">
+        <string>范围内所有</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>240</y>
+      <width>171</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <property name="text">
+        <string>查询半径(m)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="searchRidus">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+       <property name="minimum">
+        <number>100</number>
+       </property>
+       <property name="maximum">
+        <number>500</number>
+       </property>
+       <property name="singleStep">
+        <number>50</number>
+       </property>
+       <property name="value">
+        <number>200</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1231</x>
+      <y>306</y>
+      <width>258</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QPushButton" name="search">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #4488cc;
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+	font: 9pt &quot;Sarasa Term SC&quot;;
+    margin: 4px 2px;
+    color: white;
+}
+QPushButton:hover {
+    background-color: white;
+    border: 2px solid #555555;
+    color: black
+}
+QPushButton:pressed {
+    background-color: #06AD56;
+}</string>
+         </property>
+         <property name="text">
+          <string>查询周边建筑</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>78</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QListView" name="searchList">
+       <property name="styleSheet">
+        <string notr="true">font: 9pt &quot;Sarasa Term SC&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>mapChange</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>textBrowser</zorder>
+   <zorder>start</zorder>
+   <zorder>pause</zorder>
+   <zorder>textBrowser_msg</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>userLabel</zorder>
+   <zorder>make</zorder>
+   <zorder>dstChange</zorder>
+   <zorder>strategyChange</zorder>
+   <zorder>logout</zorder>
+   <zorder>label</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>siteView</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEdit_src</tabstop>
+  <tabstop>lineEdit_trans</tabstop>
+  <tabstop>lineEdit_dst</tabstop>
+  <tabstop>comboBox_strategy</tabstop>
+  <tabstop>search</tabstop>
+  <tabstop>dstChange</tabstop>
+  <tabstop>strategyChange</tabstop>
+  <tabstop>logout</tabstop>
+  <tabstop>textBrowser_msg</tabstop>
+  <tabstop>textBrowser</tabstop>
+  <tabstop>comboBox_dst</tabstop>
+  <tabstop>srcAccurate_academic</tabstop>
+  <tabstop>srcAccurate_dormitory</tabstop>
+  <tabstop>comboBox_trans</tabstop>
+  <tabstop>checkBox_accurate</tabstop>
+  <tabstop>checkBox_talk</tabstop>
+  <tabstop>transAccurate_academic</tabstop>
+  <tabstop>transAccurate_dormitory</tabstop>
+  <tabstop>dstAccurate_academic</tabstop>
+  <tabstop>dstAccurate_dormitory</tabstop>
+  <tabstop>start</tabstop>
+  <tabstop>make</tabstop>
+  <tabstop>comboBox_src</tabstop>
+  <tabstop>pause</tabstop>
+  <tabstop>mapChange</tabstop>
+  <tabstop>searchList</tabstop>
+  <tabstop>preferredView</tabstop>
+  <tabstop>siteView</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
